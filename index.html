@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krix - Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="top-sidebar">
+        <h1 class="logo">KRIX</h1>
+        <nav>
+          <a href="#" onclick="showSection('home')">🏠 Accueil</a>
+          <a href="#" onclick="showSection('exploit')">🔧 Exploit</a>
+          <a href="#" onclick="showSection('myscript')">📜 MyScript</a>
+        </nav>        
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- Accueil -->
+      <div class="centered" id="home-section">
+        <div class="avatar-wrapper">
+          <img src="https://cdn.discordapp.com/avatars/1046609167714099202/dba081f4c5c548219291dfc449eb8ab7.webp?size=2048" class="avatar" alt="Avatar Discord">
+        </div>
+        <h2>welcome</h2>
+        <p>Code ? yeas</p>
+        <button onclick="showToast('Soon')">Discord</button>
+      </div>
+
+      <!-- Exploits -->
+      <div class="centered" id="exploit-section" style="display: none;">
+        <h2 class="section-title">Exploit List</h2>
+        <div class="exploit-grid" id="exploit-grid"></div>
+      </div>
+
+      <!-- MyScript -->
+      <div class="centered" id="myscript-section" style="display: none;">
+        <h2 class="section-title">MyScript List</h2>
+        <div class="exploit-grid" id="myscript-grid">
+          <!-- Les scripts seront ajoutés dynamiquement -->
+        </div>
+      </div>
+      
+
+  <div class="toast-container" id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
