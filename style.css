@@ -303,6 +303,10 @@ button:hover {
   padding: 20px;
 }
 
+.exploit-content button + button {
+  margin-top: 10px; /* Ajuste ici l’espace entre les deux boutons */
+}
+
 
 
 
